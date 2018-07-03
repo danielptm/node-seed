@@ -26,8 +26,6 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.get('/test', (req, res) => {
-    res.send({'greeting': 'hello world'});
-})
-
 app.use(express.static(__dirname + '/frontend'));
+
+const EmployeeHandler = require('./app/src/api/EmployeeHandler')(app);
