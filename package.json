@@ -10,7 +10,8 @@
   "author": "Daniel",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
