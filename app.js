@@ -28,4 +28,7 @@ app.use(function (req, res, next) {
 
 app.use(express.static(__dirname + '/frontend'));
 
-const EmployeeHandler = require('./app/src/api/EmployeeHandler')(app);
+// const EmployeeHandler = require('./app/src/api/EmployeeHandler')(app);
+const CampaignHandler = require('./app/src/api/CampaignHandler')(app);
+const CardHandler = require('./app/src/api/CardHandler')(app);
+const FilterHandler = require('./app/src/api/FilterHandler')(app);
